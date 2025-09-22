@@ -1,10 +1,3 @@
-
----
-- Video Explanation: [FastAPI lab](https://www.youtube.com/watch?v=KReburHqRIQ&list=PLcS4TrUUc53LeKBIyXAaERFKBJ3dvc9GZ&index=4)
-- Blog: [FastAPI Lab-1](https://www.mlwithramin.com/blog/fastapi-lab1)
-
----
-
 ## Overview
 
 In this Lab, we will learn how to expose ML models as APIs using [FastAPI](https://fastapi.tiangolo.com/) and [uvicorn](https://www.uvicorn.org/).
@@ -12,7 +5,7 @@ In this Lab, we will learn how to expose ML models as APIs using [FastAPI](https
 2. **uvicorn**: Uvicorn is an [Asynchronous Server Gateway Interface - ASGI](https://youtu.be/vKjCkeJGbNk) web server implementation for Python. It is often used to serve FastAPI aplications.
 
 The workflow involves the following steps:
-1. Training a Decision Tree Classifier on Iris Dataset.
+1. Training a Decision Tree Classifier on **Iris Dataset**.
 2. Serving the trained model as an API using FastAPI and uvicorn.
 
 ## Setting up the lab
@@ -23,19 +16,18 @@ The workflow involves the following steps:
 ### Project structure
 
 ```
-mlops_labs
-└── fastapi_lab1
+mlops-labs
+└── lab-1
     ├── assets/
-    ├── fastapi_lab1_env/
     ├── model/
     │   └── iris_model.pkl
-    ├── src/
+    ├── src-iris/
     │   ├── __init__.py
     │   ├── data.py
     │   ├── main.py
     │   ├── predict.py
     │   └── train.py
-    ├── README.md
+    ├── iris-readme.md
     └── requirements.txt
 ```
 
@@ -44,9 +36,9 @@ Note:
 
 ## Running the Lab
 
-1. First step is to train a Decision Tree Classifier(Although you have **`model/iris_model.pkl`** when you cloned from the repo, let's create a new model). To do this, move into **src/** folder with
+1. First step is to train a Decision Tree Classifier(Although you have **`model/iris_model.pkl`** when you cloned from the repo, let's create a new model). To do this, move into **src-iris/** folder with
     ```bash
-    cd src
+    cd src-iris
     ```
 2. To train the Decision Tree Classifier, run:
     ```bash
@@ -58,11 +50,11 @@ Note:
     ```
 4. Testing endpoints - to view the documentation of your api model you can use [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) (or) [http://localhost:8000/docs](http://localhost:8000/docs) after you run you run your FastAPI app.
     
-![API page](assets/docs.png)
+![API page](assets/iris-docs.png)
    
 You can also test out the results of your endpoints by interacting with them. Click on the dropdown button of your endpoint -> Try it out -> Fill the Request body -> Click on Execute button.
 
-![API response](assets/api_response.png)
+![API response](assets/api_response-iris.png)
 
 - You can also use other tools like [Postman](https://www.postman.com/) for API testing.
 
