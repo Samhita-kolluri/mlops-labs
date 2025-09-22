@@ -2,4 +2,4 @@
 mlops lab submissions
 
 ## Labs
-- [Lab 1](lab1/) : API Lab
+- [Lab 1](lab-1/) : API Lab

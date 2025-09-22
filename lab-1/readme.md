@@ -1,4 +1,4 @@
-# 👀🍷 Lab-1: FastAPI
+# Lab-1: FastAPI
 
 ## Overview
 
@@ -44,23 +44,22 @@ mlops-labs
     │   ├── data.py
     │   ├── main.py
     │   ├── predict.py
-    │   └── train.py
+    │   ├── train.py
+    │   └── iris-readme.md
     ├── src-wine/
     │   ├── __init__.py
     │   ├── data.py
     │   ├── main.py
     │   ├── predict.py
-    │   └── train.py
-    ├── iris-readme.md
-    ├── wine-readme.md
+    │   ├── train.py
+    │   └── wine-readme.md
     └── requirements.txt
 ```
-
----
+----
 
 ## Running the Labs
 
-### 🌱 Iris Classifier
+### Iris Classifier
 
 1. Navigate to `src-iris`:
 
@@ -95,7 +94,7 @@ Example request:
 
 ---
 
-### 🍷 Wine Classifier
+### Wine Classifier🍷 
 
 1. Navigate to `src-wine`:
 
