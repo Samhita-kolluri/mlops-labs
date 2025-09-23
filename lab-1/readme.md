@@ -1,4 +1,4 @@
-# Lab-1: FastAPI
+# Lab-1: FastAPI, Streamlit
 
 ## Overview
 
@@ -36,6 +36,7 @@ APIs using **FastAPI** and **uvicorn** two classic datasets and serving them thr
 mlops-labs
 └── lab-1
     ├── assets/
+    │   └── dashboard.png
     ├── model/
     │   ├── iris_model.pkl
     │   └── wine_model.pkl
@@ -53,6 +54,8 @@ mlops-labs
     │   ├── predict.py
     │   ├── train.py
     │   └── wine-readme.md
+    ├── streamlit-lab/
+    │   └── Dashboard.py
     └── requirements.txt
 ```
 ----
@@ -136,7 +139,12 @@ Example request:
 }
 
 ```
+5. Run the Streamlit dashboard:
 
+   ```bash
+   cd ../streamlit-lab
+   streamlit run Dashboard.py
+   ```
 ---
 
 ## Key FastAPI Features Used
@@ -145,3 +153,13 @@ Example request:
 * **Interactive API docs** at `/docs`.
 * **Request/response models** for schema clarity.
 * **Error handling** with `HTTPException`.
+
+## Streamlit Dashboard Features
+* Sidebar for uploading JSON test files.
+* Predict button to send requests to the FastAPI backend.
+* Display predictions interactively with st.success / st.error.
+* Placeholder container with st.empty to update prediction dynamically.
+* Feedback with st.spinner during prediction.
+--- 
+### Dashboard Preview
+![Dashboard](assets/dashboard.png)
