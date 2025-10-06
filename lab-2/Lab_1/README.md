@@ -118,6 +118,6 @@ docker-compose run airflow-cli dags trigger Airflow_Lab1
 
 ---
 
-![image](..\assets\2-flow.png)
+![image](../assets/2-flow.png)
 
 Author: **Samhita Kolluri** 🏁
