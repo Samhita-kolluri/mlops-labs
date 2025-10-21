@@ -61,3 +61,7 @@ cd lab-3/Data_Monitoring/Evidently_AI
 * Year-based split simulates realistic temporal drift.
 * Useful for **sports analytics**, **fantasy sports**, or **predictive modeling** where player/team performance changes over time.
 
+---
+## Outputs
+
+![data_drift](output.png)
