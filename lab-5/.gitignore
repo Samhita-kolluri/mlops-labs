@@ -1,0 +1,8 @@
+mlflow_env
+mlruns/
+**/mlruns/
+old_version/mlruns/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
