@@ -10,3 +10,5 @@ mlops lab submissions
 - [Lab 4](lab-4/docker-lab1) : Docker Lab
 - [Lab 5](lab-5/) : Experiment Tracking Lab
     - Mlflow_lab
+- [Lab 6](lab-6/) : TensorFlow Lab
+    - Tensorboard
